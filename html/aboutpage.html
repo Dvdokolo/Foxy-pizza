@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/aboutpge.css">
+    <title>About Foxypizza</title>
+</head>
+<body> 
+
+    <!-- first layer  -->
+  <!-- loader -->
+   
+   <!-- Page Loader -->
+   <div id="loaderContainer">
+    <div class="loader"></div>
+</div>
+    <!-- first layer -->
+    <div id="mainContent" class="hideload">
+    <div class="bgimg">
+        <div class="bgimgdiv">
+
+          
+           
+                
+            <nav class="flex justify-between px-[3rem] md:mx-[5rem] md:bg-transparent bg-black p-4 relative">
+                <img class="logo h-[4rem] md:h-[5.5rem] my-[1rem]" src="../images/foxypizzalogo.png" alt="">
+        
+                <!-- Toggle button for small screens -->
+                <button id="navbarToggle" class="md:hidden text-white text-[2rem]">
+                    ☰
+                </button>
+        
+                <div id="navbarMenu" class="navbar-menu md:hidden flex-col p-5 md:justify-evenly absolute bg-[#000000c6] md:bg-transparent w-full left-0 top-[8rem] md:top-auto">
+                    <div class="dropdown relative">
+                        <a href="../html/homepage.html">
+                            <ol class="text-white text-[1rem] md:text-[1.6rem] mt-7 md:mt-0 font-semibold duration-100 active:text-red-600 cursor-pointer hover:border-b-4 p-2 border-red-600">
+                                Home
+                            </ol>
+                        </a>
+                        <div class="dropdown-menu absolute left-0 bg-white text-black p-2 rounded-md shadow-lg mt-2">
+                            <span>Submenu for Home</span>
+                        </div>
+                    </div>
+                    <div class="dropdown relative">
+                        <a href="../html/aboutpage.html">
+                            <ol class="text-white text-[1rem] md:text-[1.6rem] mt-7 md:mt-0 font-semibold duration-100 active:text-red-600 cursor-pointer hover:border-b-4 p-2 border-red-600">
+                                About
+                            </ol>
+                        </a>
+                        <div class="dropdown-menu absolute left-0 bg-white text-black p-2 rounded-md shadow-lg mt-2">
+                            <span>Submenu for About</span>
+                        </div>
+                    </div>
+                    <div class="dropdown relative">
+                        <a href="../html/contact.html">
+                            <ol class="text-white text-[1rem] md:text-[1.6rem] mt-7 md:mt-0 font-semibold duration-100 active:text-red-600 cursor-pointer hover:border-b-4 p-2 border-red-600">
+                                Contact
+                            </ol>
+                        </a>
+                        <div class="dropdown-menu absolute left-0 bg-white text-black p-2 rounded-md shadow-lg mt-2">
+                            <span>Submenu for Contact</span>
+                        </div>
+                    </div>
+                    <div class="dropdown relative">
+                        <a href="../html/gallery.html">
+                            <ol class="text-white text-[1rem] md:text-[1.6rem] mt-7 md:mt-0 font-semibold duration-100 active:text-red-600 cursor-pointer hover:border-b-4 p-2 border-red-600">
+                                Gallery
+                            </ol>
+                        </a>
+                        <div class="dropdown-menu absolute left-0 bg-white text-black p-2 rounded-md shadow-lg mt-2">
+                            <span>Submenu for Gallery</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="navbarMenu" class="navbar-menu hidden md:flex md:justify-evenly md:relative bg-[#000000c6] my-auto md:bg-transparent w-full left-0 top-[8rem] md:top-auto">
+                    <div class="dropdown relative">
+                        <a href="../html/homepage.html">
+                            <ol class="text-white text-[1rem] md:text-[1.6rem] mt-7 md:mt-0 font-semibold duration-100 active:text-red-600 cursor-pointer hover:border-b-4 p-2 border-red-600">
+                                Home
+                            </ol>
+                        </a>
+                        <div class="dropdown-menu absolute left-0 bg-white text-black p-2 rounded-md shadow-lg mt-2">
+                            <span>Submenu for Home</span>
+                        </div>
+                    </div>
+                    <div class="dropdown relative">
+                        <a href="../html/aboutpage.html">
+                            <ol class="text-white text-[1rem] md:text-[1.6rem] mt-7 md:mt-0 font-semibold duration-100 active:text-red-600 cursor-pointer hover:border-b-4 p-2 border-red-600">
+                                About
+                            </ol>
+                        </a>
+                        <div class="dropdown-menu absolute left-0 bg-white text-black p-2 rounded-md shadow-lg mt-2">
+                            <span>Submenu for About</span>
+                        </div>
+                    </div>
+                    <div class="dropdown relative">
+                        <a href="../html/contact.html">
+                            <ol class="text-white text-[1rem] md:text-[1.6rem] mt-7 md:mt-0 font-semibold duration-100 active:text-red-600 cursor-pointer hover:border-b-4 p-2 border-red-600">
+                                Contact
+                            </ol>
+                        </a>
+                        <div class="dropdown-menu absolute left-0 bg-white text-black p-2 rounded-md shadow-lg mt-2">
+                            <span>Submenu for Contact</span>
+                        </div>
+                    </div>
+                    <div class="dropdown relative">
+                        <a href="../html/gallery.html">
+                            <ol class="text-white text-[1rem] md:text-[1.6rem] mt-7 md:mt-0 font-semibold duration-100 active:text-red-600 cursor-pointer hover:border-b-4 p-2 border-red-600">
+                                Gallery
+                            </ol>
+                        </a>
+                        <div class="dropdown-menu absolute left-0 bg-white text-black p-2 rounded-md shadow-lg mt-2">
+                            <span>Submenu for Gallery</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+
+<br>
+<br>
+
+            <h1 class="text-white text-center font-bold  text-[4rem] md:text-[5.5rem] lg:text-[8rem]  ">
+                Learn More !!!
+                <br>
+                <span class="pizza-word block text-red-600 ">About Us</span>
+            </h1>
+
+        </div>
+    </div>
+
+    <div class="h-[0.5rem] bg-red-600 ">
+
+    </div>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<!-- secound layer  -->
+
+
+<div class="md:flex md:justify-evenly mx-auto ">
+    
+    <div class="flex justify-center items-center">
+    <img src="../images/aboutimg1.jpg" alt="" class="h-[20rem] md:h-[30rem] lg:h-[45rem] w-[20rem]  lg:w-[35rem] rounded-full md:rounded-[2rem]">
+</div>
+
+    <div class="md:w-[37rem] text-center my-auto">
+<h1 class=" text-[2rem] md:text-[3.5rem] lg:text-[4.5rem] font-bold">
+    Foxy Pizza, where passion meets flavor! Since 2008.
+</h1>
+<br>
+<p class="text-[1rem] md:text-[1.2rem]">
+    At Foxy Pizza,
+     we believe in crafting every pizza with the freshest 
+     ingredients to satisfy every taste. But we're more than
+      just great pizza. At Foxy Pizza, we pride ourselves on 
+      excellent customer service and a cozy, friendly atmosphere. 
+      and every bite leaves you wanting more.</p>
+    </div>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<hr class="border-2 border-red-600">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- third layer  -->
+<div class="lg:flex  lg:justify-evenly">
+    <div class="flex justify-center items-center">    <img src="../images/aboutimg2.jpg" class=" h-[20rem] lg:h-[25rem] w-[20rem] rounded-full lg:rounded-[2rem] object-cover my-auto" alt=""> </div>
+<br>
+<br>
+
+    <div class="flex flex-col justify-center items-center w-full lg:w-1/2   mx-auto lg:mx-0 bg-[#000000d6] p-5 lg:rounded-3xl">
+        <h1 class="ourstorytxt text-center text-[2.5rem]  md:text-[3.5rem] text-red-600">OUR STORY</h1>
+
+        <div class="md:w-auto ">
+            <div class="flex md:justify-between items-center w-full md:w-[30rem] text-[1rem] md:text-[2rem] bg-white rounded-[3rem]">
+                <ol class="bg-white p-6 rounded-3xl">2008</ol>
+                <ol class="p-6 rounded-3xl">2010</ol>
+                <ol class="p-6 rounded-3xl">2020</ol>
+                <ol class="bg-red-600 p-6 rounded-3xl text-white">2024</ol>
+            </div>
+
+            <div class="text-white text-[1.1rem]  md:text-[1.2rem] mt-4 md:w-[30rem] text-center">
+                Foxy Pizza was founded in 2008 with a mission to bring 
+                exceptional pizza to our community. Starting as a small,
+                family-owned pizzeria, we quickly became known for our 
+                delicious, hand-crafted pizzas made with the freshest
+                ingredients. Today, we continue to uphold our founding 
+                principles, and friendly atmosphere that our customers 
+                have loved from the beginning.
+            </div>
+        </div>
+<br>
+        <button class="btn bg-red-600 text-white text-[1.2rem] items-center p-3 rounded-md">
+            View Our Menue
+        </button>
+    </div>
+<br>
+<br>
+    <div class="flex justify-center items-center">    <img src="../images/aboutimg5.jpg" class=" h-[20rem] lg:h-[25rem] w-[20rem] rounded-full lg:rounded-[2rem] object-cover my-auto" alt=""> </div>
+</div>
+
+</div>
+
+<br>
+<br>
+
+<!-- forthlayer -->
+
+<h1 class="text-red-600 text-[4rem] text-center">
+    Clients Review
+</h1>
+
+<div class="flex justify-center items-center">
+    <img src="../images/foxy-pizza-logo.png" class="h-[9rem]" alt="">
+</div>
+
+
+<h1 class="text-[4rem] text-center">
+Foxy pizza
+</h1>
+
+
+<div class="flex justify-center items-center">
+<p class="text-[1.1rem] md:text-[1.3rem] text-center  md:w-[60rem]">
+    At Foxy Pizza, our customers are at the heart of everything we do. 
+    We're proud to share the glowing reviews from our satisfied clients. 
+    "Best pizza in town!" raves Sarah M., "The ingredients are always fresh,
+     and the flavors are simply amazing." John D. appreciates our welcoming
+      atmosphere, saying, "Foxy Pizza feels like a home away from home. The 
+      staff is friendly, and the service is top-notch. Thank you for making Foxy
+        Pizza your favorite place to enjoy great food!
+</p>
+</div>
+    
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<!-- footer -->
+
+<div class=" bg-red-600 p-10 md:p-20">
+
+
+    <h1 class="text-white text-[1.1rem] md:text-[1.4rem] text-center">Address: 123 Flavor Street, Garki District, Abuja, FCT, Nigeria
+    </h1>
+
+    <br>
+
+    <div class="flex justify-center text-white text-[1.4rem] font-semibold gap-6">
+        <p>HOME</p>
+        <p>MENU</p>
+        <p>HIRING</p>
+    </div>
+
+    <br>
+
+
+    <div class="md:flex justify-center text-white  text-[1.1rem] md:text-[1.4rem] font-semibold gap-6">
+        <h1>Email: contact@foxypizza.ng </h1>
+        <h1>Phone no: +234 123 456 7890 </h1>
+    </div>
+
+
+</div>
+
+</div>
+
+
+<script>
+    // nav
+    const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
+
+        navbarToggle.addEventListener('click', () => {
+            if (navbarMenu.classList.contains('active')) {
+                navbarMenu.classList.remove('show');
+                setTimeout(() => {
+                    navbarMenu.classList.remove('active');
+                }, 500);
+            } else {
+                navbarMenu.classList.add('active');
+                setTimeout(() => {
+                    navbarMenu.classList.add('show');
+                }, 10);
+            }
+        });
+
+        window.onclick = function(event) {
+            if (!navbarToggle.contains(event.target) && !navbarMenu.contains(event.target)) {
+                if (navbarMenu.classList.contains('active')) {
+                    navbarMenu.classList.remove('show');
+                    setTimeout(() => {
+                        navbarMenu.classList.remove('active');
+                    }, 500);
+                }
+            }
+        }
+
+        
+        document.getElementById('navbarToggle').addEventListener('click', function () {
+        var navbarMenu = document.getElementById('navbarMenu');
+        navbarMenu.classList.toggle('active');
+    });
+
+
+        // loader
+
+        window.addEventListener('load', function () {
+            var loaderContainer = document.getElementById('loaderContainer');
+            var mainContent = document.getElementById('mainContent');
+            loaderContainer.classList.add('hideload');
+            mainContent.classList.remove('hideload');
+        });
+
+        document.getElementById('navbarToggle').addEventListener('click', function () {
+            var navbarMenu = document.getElementById('navbarMenu');
+            navbarMenu.classList.toggle('active');
+        });
+
+ 
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+body{
+    
+    top: 0;
+    left: 0;
+    background-image: url('/images/contactusbgimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+}
+
+
+.bgimgdiv {
+   
+  height: 100%;
+    background-color: rgba(0, 0, 0, 0.819);
+    
+
+}
+
+/* loader */
+#loaderContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Loader */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid red;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+/* Spin Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide loader when page is loaded */
+.hideload {
+    opacity: 0;
+    pointer-events: none;
+}
+ 
+
+
+
+
+
+
+nav {}
+
+.navbar-menu {
+    display: none;
+}
+
+.navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.navbar-menu.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: slideInFromLeft 0.5s forwards;
+    transition-duration: 5s;
+    opacity: 1;
+    height: auto;
+    width: 7.5rem;
+    color: white;
+    background-color: #000000b2;
+    transition-duration: 3s;
+}
+
+/* Navbar Menu Links */
+.navbar-menu a {
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/* Keyframes for slide in from left animation */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.logo{
+    
+    animation: spinIn 2s ease-out forwards;
+}
+
+
+@keyframes spinIn {
+    0% {
+        transform:  translateX(-100vw);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform:  translateX(0);
+    }
+}
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: rgb(255, 5, 5);
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #860f0f;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid rgb(255, 255, 255);
+        border-left: 5px solid rgb(255, 255, 255);
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid rgb(255, 255, 255);
+        border-right: 5px solid rgb(255, 255, 255);
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background: rgb(0, 0, 0);
+        color: white;
+
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+            border-color: white;
+        }
+    }
+}
+
+.reservationtxt{
+    font-family: "Dancing Script", cursive;
+
+}
